@@ -1,0 +1,392 @@
+/* About Page Styles */
+
+/* About Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: white;
+    text-align: center;
+    padding: 150px 0 100px;
+    position: relative;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Company Overview Section */
+.company-overview {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.overview-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.overview-text {
+    flex: 2;
+}
+
+.overview-text h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.overview-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.overview-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.overview-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 80px 0;
+    background-color: #f1f5f9;
+}
+
+.mission-vision-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.mv-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mv-card h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.mv-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 1.5px;
+}
+
+.mv-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Core Values Section */
+.core-values {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+/* Manufacturing Process Section */
+.manufacturing-process {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.process-steps {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.process-step {
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.process-step::before {
+    content: '';
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    width: 2px;
+    height: calc(100% + 30px);
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.process-step:last-child::before {
+    display: none;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 30px;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.step-content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step-content:hover {
+    transform: translateY(-5px);
+}
+
+.step-content h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.step-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.certification-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.certification-text {
+    flex: 2;
+}
+
+.certification-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.certification-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certification-image img {
+    max-width: 80%;
+    transition: transform 0.5s ease;
+}
+
+.certification-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Global Presence Section */
+.global-presence {
+    padding: 100px 0;
+    background-color: #f1f5f9;
+}
+
+.presence-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.presence-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presence-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.presence-image img:hover {
+    transform: scale(1.05);
+}
+
+.presence-text {
+    flex: 2;
+}
+
+.presence-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Call to Action Section */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .overview-content,
+    .certification-content,
+    .presence-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .overview-text,
+    .overview-image,
+    .certification-text,
+    .certification-image,
+    .presence-text,
+    .presence-image {
+        flex: none;
+        width: 100%;
+    }
+    
+    .overview-image,
+    .certification-image,
+    .presence-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .mission-vision-cards {
+        flex-direction: column;
+    }
+    
+    .process-step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .process-step::before {
+        left: 30px;
+        top: 60px;
+        height: calc(100% - 30px);
+    }
+    
+    .step-number {
+        margin-bottom: 20px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .about-hero p {
+        font-size: 1rem;
+    }
+    
+    .overview-text h2,
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+}
